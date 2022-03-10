@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin-left: 300px;
+    padding: 50px;
+    transition: margin-left 0.2s ease-in;
+}
+.container.inactivate{
+    margin-left: 80px;;
+}

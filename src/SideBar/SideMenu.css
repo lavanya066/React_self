@@ -1,0 +1,186 @@
+.side-menu{
+    position: fixed;
+    background: #000;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    transition: width .2s ease-in;
+}
+.side-menu.inactive{
+    width: 80px;
+}
+.side-menu .top-section{
+    position: relative;
+    
+}
+.side-menu .top-section .logo{
+    background-color: wheat;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: inline-block;
+    
+
+}
+.side-menu .top-section .logo .cls{
+    max-width: 100%;
+    max-height: 100%;
+    
+
+}
+.side-menu .main-menu{
+    
+    margin: 5px 0;
+    position: relative;
+    max-height: 250px;
+    
+    
+    
+}
+.side-menu .main-menu .menu-item{
+    color: #666;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    
+    
+}
+.side-menu .main-menu .menu-item li{
+    text-decoration: none;
+}
+.side-menu .main-menu .menu-item span{
+    position: absolute;
+    display: inline-block;
+    line-height: 40px;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+    text-decoration: none;
+
+}
+.side-menu.inactive .main-menu .menu-item span{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.side-menu .main-menu  .sub-menu{
+    color: #666;
+    
+    
+    margin-left: 20px;
+    border-left: 1px solid #666;
+    box-sizing: border-box;
+    padding-left: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-in;
+}
+.side-menu.inactive .main-menu  .sub-menu{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.side-menu .main-menu  .sub-menu.activate{
+    max-height: 200px;
+}
+.side-menu .main-menu  .sub-menu a.active{
+    background-color:#888;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 5px ;
+    color: white;
+}
+.side-menu .main-menu  .sub-menu a{
+    display: block;
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #666;
+}
+.side-menu .main-menu .menu-item .menu-icon{
+    color: white;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    
+}
+.side-menu .main-menu .menu-item.active{
+    background-color:#888;
+}
+.side-menu .top-section .toggle_btn{
+    color: whitesmoke;
+    
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    
+    
+}
+.side-menu .top-section .toggle_btn .dehaze{
+    font-size: 30px;
+}
+.side-menu.inactive .top-section .toggle_btn{
+    
+    right: -50px;
+    color: #000;
+}
+.side-menu .search_controller input[type=text]{
+    border: 0;
+    outline: none;
+    height: 35px;
+    background-color: #333;
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left:40px;
+    color: #666;
+    overflow: hidden;
+
+
+}
+.side-menu .search_controller{
+    position: relative;
+}
+.side-menu .search_controller .search{
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #666;
+   
+    box-sizing: border-box;
+    
+    
+}
+.side-menu-footer{
+    width: 100%;
+    background-color: #666;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    border: 1px;
+    background-color: #333;
+}
